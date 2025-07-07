@@ -1,0 +1,6 @@
+tk
+matplotlib
+qrcode
+Pillow
+fpdf
+
