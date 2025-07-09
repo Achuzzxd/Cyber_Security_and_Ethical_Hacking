@@ -50,32 +50,32 @@ The application helps users identify potentially malicious URLs instantly and de
 ---
 
 ## Architecture Diagram
-'''
-    +------------------+
-    |   User Input     |
-    +------------------+
-            |
-            v
+undefined
++------------------+
+| User Input |
++------------------+
+|
+v
 +-------------------------+
-|    Tkinter GUI Layer    |  <-- User enters URL, triggers analysis
+| Tkinter GUI Layer | <-- User enters URL, triggers analysis
 +-------------------------+
-            |
-            v
+|
+v
 +-------------------------+
-|    Feature Extraction   |  <-- Extracts lexical, domain, and technical features
+| Feature Extraction | <-- Extracts lexical, domain, and technical features
 +-------------------------+
-            |
-            v
+|
+v
 +-------------------------+
-|  Pre-trained ML Model   |  <-- Classifies as "Legitimate" or "Phishing"
+| Pre-trained ML Model | <-- Classifies as "Legitimate" or "Phishing"
 +-------------------------+
-            |
-            v
+|
+v
 +-------------------------+
-|   Result Display (GUI)  |  <-- Shows result and confidence score
+| Result Display (GUI) | <-- Shows result and confidence score
 +-------------------------+
+undefined
 
-'''
 
 
 The GUI takes user input, extracts features from the URL, feeds them into the ML model, and displays whether it is **Legitimate** or **Phishing**.
