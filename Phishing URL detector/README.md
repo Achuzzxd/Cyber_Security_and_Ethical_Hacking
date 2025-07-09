@@ -50,7 +50,7 @@ The application helps users identify potentially malicious URLs instantly and de
 ---
 
 ## Architecture Diagram
-
+'''
     +------------------+
     |   User Input     |
     +------------------+
@@ -75,6 +75,7 @@ The application helps users identify potentially malicious URLs instantly and de
 |   Result Display (GUI)  |  <-- Shows result and confidence score
 +-------------------------+
 
+'''
 
 
 The GUI takes user input, extracts features from the URL, feeds them into the ML model, and displays whether it is **Legitimate** or **Phishing**.
