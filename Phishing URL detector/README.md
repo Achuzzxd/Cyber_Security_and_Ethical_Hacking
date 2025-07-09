@@ -50,7 +50,8 @@ The application helps users identify potentially malicious URLs instantly and de
 ---
 
 ## Architecture Diagram
-undefined
+
+```
 +------------------+
 | User Input |
 +------------------+
@@ -74,7 +75,7 @@ v
 +-------------------------+
 | Result Display (GUI) | <-- Shows result and confidence score
 +-------------------------+
-undefined
+```
 
 
 
