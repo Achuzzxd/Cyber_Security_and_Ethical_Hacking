@@ -7,7 +7,8 @@ st.title("📁 Protected Folder Launcher")
 st.markdown("""
     <style>
     body, .stApp {
-        background-color: black;
+        background-color: black;python -m venv venv
+
         color: #FFFFF0;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }

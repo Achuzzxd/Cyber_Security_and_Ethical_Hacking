@@ -47,9 +47,24 @@ This project is a secure chat system that allows two users to communicate privat
 
 ## Architecture Diagram
 
-+---------+ Encrypted +---------+ Encrypted +---------+
-| User 1 | <----------------------> | Server | <----------------------> | User 2 |
-+---------+ (RSA Key Exchange) +---------+ (RSA Key Exchange) +---------+
++-------------------+        Encrypted Messages        +-------------------+
+|                   | <-----------------------------> |                   |
+|     Client 1      |                                 |     Client 2      |
+|   (User 1 GUI)    |                                 |   (User 2 GUI)    |
+|                   |                                 |                   |
++---------+---------+                                 +---------+---------+
+          |                                                     |
+          |                                                     |
+          |            Key Exchange, Encrypted Messages         |
+          |-----------------------------------------------------|
+          |                                                     |
++---------v---------+                                 +---------v---------+
+|                   |                                 |                   |
+|      Server       |      (Message Relay Only,       |      Server       |
+|  (Python Socket)  |        No Decryption)           |  (Python Socket)  |
+|                   |                                 |                   |
++-------------------+                                 +-------------------+
+
 
 *Messages are encrypted end-to-end using RSA. The server only relays encrypted data and does not have access to plaintext messages.*
 

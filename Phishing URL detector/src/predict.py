@@ -2,7 +2,7 @@ from feature_extraction import extract_features
 import pandas as pd
 import joblib
 
-model = joblib.load('../models/phishing_detector_model.pkl')
+model = joblib.load('models/phishing_detector_model.pkl')
 
 def predict_urls(urls):
     feature_list = [extract_features(url) for url in urls]
