@@ -35,67 +35,36 @@ This project is a Wi-Fi network scanner that allows users to discover, analyze, 
 ---
 
 ## Screenshot
+
 Wi-Fi Network Scanner GUI Screenshot
+
 ![Wi-Fi Network Scanner GUI Screenshot](images/Screenshot_1.png)
+
 Signal strength and Channel usage of Scanned Wi-Fi Networks
+
 ![Signal strength and Channel usage of Scanned Wi-Fi Networks](images/Screenshot_2.png)
+
 Generated QR Code Screenshot
+
 ![Generated QR Code Screenshot](images/Screenshot_3.png)
+
 Exported PDF File
+
 ![Exported PDF File](images/Screenshot_4.png)
+
 
 ---
 
 ## Architecture Diagram
 
-┌─────────────────────┐
-│     User (GUI)      │
-│   Tkinter Frontend  │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│    GUI Components   │
-│ - Network Table     │
-│ - Signal Graph      │
-│ - Channel Graph     │
-│ - QR Code Generator │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│   Scanner Module    │
-│ - OS Detection      │
-│ - Windows Scanner   │
-│ - Linux Scanner     │
-│ - Output Parsing    │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│   OS System Calls   │
-│  (netsh, iwlist)    │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│   Wi-Fi Adapter     │
-│  (Hardware Layer)   │
-└─────────────────────┘
-
-          ▲
-          │
-┌─────────┴───────────┐
-│  Data Visualization │
-│    (matplotlib)     │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│    Export Module    │
-│ (CSV, PDF, QR Code) │
-└─────────────────────┘
-
++---------+ Scan +---------+ Scan +---------+
+| User | <-------------------> | OS | <-------------------> | Wi-Fi |
+| GUI | (subprocess) | System | (native) | APs |
++---------+ +-------+ +-------+
+| |______________________________|
+| Visualization & Export
+v
+Real-Time Graphs, Table, QR Codes
 
 
 *The application uses OS-native commands to scan for Wi-Fi networks, parses the results, and displays them in a modern GUI with real-time updates and export options.*
