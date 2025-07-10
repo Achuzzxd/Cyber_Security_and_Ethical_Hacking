@@ -52,7 +52,7 @@ It is designed solely for educational purposes to demonstrate the working of ran
 ---
 
 ## Architecture Diagram
-
+```
 +---------------------------+
 |         User              |
 +---------------------------+
@@ -109,7 +109,7 @@ It is designed solely for educational purposes to demonstrate the working of ran
     | (Show Original  |
     | Data)           |
     +-----------------+
-
+```
 
     **Flow:**  
 

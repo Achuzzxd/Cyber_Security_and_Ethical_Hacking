@@ -19,7 +19,7 @@ def count_transitions(password):
     return transitions
 
 def custom_score_calc(password):
-    # 0-4, transitions not included
+    
     score = 0
     length = len(password)
     
@@ -104,13 +104,12 @@ def analyze_password(password):
     custom_score = custom_score_calc(password)
     custom_sugg = custom_suggestions(password)
 
-    # Calculate transitions score and count
+
     t_score, transitions_count = transitions_score(password)
     transitions_sugg = transitions_suggestions(t_score)
 
-    # Final score out of 100
     final_score = z_score * 16 + custom_score * 7 + t_score * 4
-    # Label assignment (for GUI display)
+
     if 100 >= final_score > 75:
         label = "Very Strong"
     elif 75 >= final_score > 60:

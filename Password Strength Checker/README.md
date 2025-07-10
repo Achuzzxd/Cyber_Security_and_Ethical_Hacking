@@ -36,16 +36,31 @@ This project is a cyber-themed password strength analyzer that evaluates passwor
 
 ## Screenshot
 
+Password checker GUI
+
 ![Password checker GUI](images/Screenshot_1.png)
+
+Weak Password
+
 ![Weak Password](images/Screenshot_2.png)
+
+Moderate Password
+
 ![Moderate Password](images/Screenshot_3.png)
+
+Strong Password
+
 ![Strong Password](images/Screenshot_4.png)
+
+Very Strong Password
+
 ![Very Strong Password](images/Screenshot_5.png)
 
 ---
 
 ## Architecture Diagram
 
+```
    +---------------------+
    |     User Input      |
    |  (Password Entry)   |
@@ -81,7 +96,7 @@ This project is a cyber-themed password strength analyzer that evaluates passwor
 | - Sequence Details          |
 | - User Guidance             |
 +-----------------------------+
-
+```
 
 *Password is analyzed using multiple metrics; results and suggestions are shown instantly in the GUI.*
 

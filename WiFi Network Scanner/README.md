@@ -57,14 +57,55 @@ Exported PDF File
 
 ## Architecture Diagram
 
-+---------+ Scan +---------+ Scan +---------+
-| User | <-------------------> | OS | <-------------------> | Wi-Fi |
-| GUI | (subprocess) | System | (native) | APs |
-+---------+ +-------+ +-------+
-| |______________________________|
-| Visualization & Export
-v
-Real-Time Graphs, Table, QR Codes
+```
++┌─────────────────────┐
+│     User (GUI)      │
+│   Tkinter Frontend  │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│    GUI Components   │
+│ - Network Table     │
+│ - Signal Graph      │
+│ - Channel Graph     │
+│ - QR Code Generator │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│   Scanner Module    │
+│ - OS Detection      │
+│ - Windows Scanner   │
+│ - Linux Scanner     │
+│ - Output Parsing    │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│   OS System Calls   │
+│  (netsh, iwlist)    │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│   Wi-Fi Adapter     │
+│  (Hardware Layer)   │
+└─────────────────────┘
+
+          ▲
+          │
+┌─────────┴───────────┐
+│ Data Visualization  │
+│   (matplotlib)      │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│    Export Module    │
+│ (CSV, PDF, QR Code) │
+└─────────────────────┘
+```
 
 
 *The application uses OS-native commands to scan for Wi-Fi networks, parses the results, and displays them in a modern GUI with real-time updates and export options.*

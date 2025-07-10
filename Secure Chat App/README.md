@@ -36,10 +36,24 @@ This project is a secure chat system that allows two users to communicate privat
 
 ## Screenshot
 
+Secure Chat GUI Screenshot
+
 ![Secure Chat GUI Screenshot](images/Screenshot_1.png)
+
+Server Active Screenshot
+
 ![Server Active Screenshot](images/Screenshot_2.png)
+
+Client1 connect to server Screenshot
+
 ![Client1 connect to server Screenshot](images/Screenshot_3.png)
+
+Client2 connect to server Screenshot
+
 ![Client2 connect to server Screenshot](images/Screenshot_4.png)
+
+End to End Encrypted Chat
+
 ![End to End Encrypted Chat](images/Screenshot_5.png)
 
 
@@ -47,6 +61,7 @@ This project is a secure chat system that allows two users to communicate privat
 
 ## Architecture Diagram
 
+```
 +-------------------+        Encrypted Messages        +-------------------+
 |                   | <-----------------------------> |                   |
 |     Client 1      |                                 |     Client 2      |
@@ -64,7 +79,7 @@ This project is a secure chat system that allows two users to communicate privat
 |  (Python Socket)  |        No Decryption)           |  (Python Socket)  |
 |                   |                                 |                   |
 +-------------------+                                 +-------------------+
-
+```
 
 *Messages are encrypted end-to-end using RSA. The server only relays encrypted data and does not have access to plaintext messages.*
 

@@ -42,8 +42,16 @@ The application helps users identify potentially malicious URLs instantly and de
 
 ## Screenshot
 
+Phishing URL checker Screenshot
+
 ![Phishing URL checker Screenshot](images/Screenshot_1.png)
+
+Legitimate Screenshot
+
 ![Legitimate Screenshot](images/Screenshot_2.png)
+
+Phishing Screenshot
+
 ![Phishing Screenshot](images/Screenshot_3.png)
   
 
@@ -52,28 +60,28 @@ The application helps users identify potentially malicious URLs instantly and de
 ## Architecture Diagram
 
 ```
-+------------------+
-| User Input |
-+------------------+
-|
-v
+    +------------------+
+    |   User Input     |
+    +------------------+
+            |
+            v
 +-------------------------+
-| Tkinter GUI Layer | <-- User enters URL, triggers analysis
+|    Tkinter GUI Layer    |  <-- User enters URL, triggers analysis
 +-------------------------+
-|
-v
+            |
+            v
 +-------------------------+
-| Feature Extraction | <-- Extracts lexical, domain, and technical features
+|    Feature Extraction   |  <-- Extracts lexical, domain, and technical features
 +-------------------------+
-|
-v
+            |
+            v
 +-------------------------+
-| Pre-trained ML Model | <-- Classifies as "Legitimate" or "Phishing"
+|  Pre-trained ML Model   |  <-- Classifies as "Legitimate" or "Phishing"
 +-------------------------+
-|
-v
+            |
+            v
 +-------------------------+
-| Result Display (GUI) | <-- Shows result and confidence score
+|   Result Display (GUI)  |  <-- Shows result and confidence score
 +-------------------------+
 ```
 
@@ -113,8 +121,11 @@ pip install -r requirements.txt
 Clone the repository and run the application as follows:
 
 git clone https://github.com/Achuzzxd/Cyber_Security_and_Ethical_Hacking.git
+
 cd Cyber_Security_and_Ethical_Hacking/Phishing\ URL\ detector
+
 pip install -r requirements.txt
+
 python src/gui.py
 
 
