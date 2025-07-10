@@ -30,25 +30,26 @@ This project is a Wi-Fi network scanner that allows users to discover, analyze, 
 
 ## Project Status
 
-- **Status:** Completed (July 2025)
+* **Status:** Completed (July 2025)
 
+* **Organization:** Tamizhan Skills
 ---
 
 ## Screenshot
 
-Wi-Fi Network Scanner GUI Screenshot
+### Wi-Fi Network Scanner GUI Screenshot:
 
 ![Wi-Fi Network Scanner GUI Screenshot](images/Screenshot_1.png)
 
-Signal strength and Channel usage of Scanned Wi-Fi Networks
+### Signal strength and Channel usage of Scanned Wi-Fi Networks:
 
 ![Signal strength and Channel usage of Scanned Wi-Fi Networks](images/Screenshot_2.png)
 
-Generated QR Code Screenshot
+### Generated QR Code Screenshot:
 
 ![Generated QR Code Screenshot](images/Screenshot_3.png)
 
-Exported PDF File
+### Exported PDF File:
 
 ![Exported PDF File](images/Screenshot_4.png)
 
@@ -145,11 +146,42 @@ pip install -r requirements.txt
 
 Clone the repository and run the application as follows:
 
-git clone https://github.com/Achuzzxd/Cyber_Security_and_Ethical_Hacking.git
-cd Cyber_Security_and_Ethical_Hacking/WiFi\ Network\ Scanner
-pip install -r requirements.txt
-python main.py
+### 1. Clone the Repository
 
+```bash
+git clone https://github.com/Achuzzxd/Cyber_Security_and_Ethical_Hacking.git
+```
+```bash
+cd Cyber_Security_and_Ethical_Hacking/WiFi\ Network\ Scanner
+```
+
+### 2. (Optional) Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+```bash
+source venv/bin/activate  
+```
+
+# On Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Application
+
+```bash
+python main.py
+```
 
 **Usage:**
 1. Click "Scan Wi-Fi" to discover nearby networks.

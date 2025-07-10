@@ -32,27 +32,28 @@ This project is a cyber-themed password strength analyzer that evaluates passwor
 
 - **Status:** Completed (June 2025)
 
+* **Organization:** Tamizhan Skills
 ---
 
 ## Screenshot
 
-Password checker GUI
+### Password checker GUI:
 
 ![Password checker GUI](images/Screenshot_1.png)
 
-Weak Password
+### Weak Password:
 
 ![Weak Password](images/Screenshot_2.png)
 
-Moderate Password
+### Moderate Password:
 
 ![Moderate Password](images/Screenshot_3.png)
 
-Strong Password
+### Strong Password:
 
 ![Strong Password](images/Screenshot_4.png)
 
-Very Strong Password
+### Very Strong Password:
 
 ![Very Strong Password](images/Screenshot_5.png)
 
@@ -126,13 +127,42 @@ pip install -r requirements.txt
 
 ## Installation & Usage
 
-Clone the repository and run the application as follows:
+### 1. Clone the Repository
 
+```bash
 git clone https://github.com/Achuzzxd/Cyber_Security_and_Ethical_Hacking.git
+```
+```bash
 cd Cyber_Security_and_Ethical_Hacking/Password\ Strength\ Checker
-pip install -r requirements.txt
-python main.py
+```
 
+### 2. (Optional) Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+```bash
+source venv/bin/activate  
+```
+
+# On Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Application
+
+```bash
+python main.py
+```
 
 **Usage:**
 1. Enter your password in the input field.

@@ -35,18 +35,45 @@ It is designed solely for educational purposes to demonstrate the working of ran
 
 **Status:** Completed (June 2025)
 
+* **Organization:** Tamizhan Skills
 ---
 
 ## Screenshot
 
+### Streamlit GUI:
+
 ![Streamlit GUI](images/Screenshot_1.png)
+
+### Folder Encrypted:
+
 ![Folder Encrypted](images/Screenshot_2.png)
+
+### Decrypt Folder Page:
+
 ![Decrypt Folder Page](images/Screenshot_3.png)
+
+### Payment Portal Page:
+
 ![Payment Portal Page](images/Screenshot_4.png)
+
+### Folder decrypted Files AREN'T:
+
 ![Folder decrypted Files AREN'T](images/Screenshot_5.png)
+
+### Decrypt Files:
+
 ![Decrypt Files](images/Screenshot_6.png)
+
+### Decrypted Files too:
+
 ![Decrypted Files too](images/Screenshot_7.png)
+
+### Trick page:
+
 ![Trick page](images/Screenshot_8.png)
+
+### Ransomware applied:
+
 ![Ransomware applied](images/Screenshot_9.png)
 
 ---
@@ -152,12 +179,42 @@ pip install -r requirements.txt
 ## Installation & Usage
 
 Clone the repository and run the simulator as follows:
+### 1. Clone the Repository
 
+```bash
 git clone https://github.com/Achuzzxd/Cyber_Security_and_Ethical_Hacking.git
+```
+```bash
 cd Cyber_Security_and_Ethical_Hacking/Simple\ Ransomware\ Simulator
-pip install -r requirements.txt
-streamlit run Home.py
+```
 
+### 2. (Optional) Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+```bash
+source venv/bin/activate  
+```
+
+# On Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Application
+
+```bash
+streamlit run Home.py
+```
 
 ### Usage
 

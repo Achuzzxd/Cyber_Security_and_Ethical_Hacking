@@ -35,13 +35,18 @@ This GUI-based port scanner allows users to scan a target (domain or IP) for ope
 
 * **Status:** Completed (July 2025)
 
+* **Organization:** Tamizhan Skills
 ---
 
 ## Screenshot
 
-<!-- Add your screenshot here -->
-![Port Scanner GUI Screenshot](Screenshot.png)
+### Port Scanner GUI Screenshot:
 
+![Port Scanner GUI Screenshot](images/Screenshot_1.png)
+
+### Port Scanner working Screenshot:
+
+![Port Scanner working Screenshot](images/Screenshot_2.png)
 ---
 
 ## Architecture Diagram
@@ -86,9 +91,9 @@ tk
 
 
 If you're on Linux:
-
+```
 sudo apt-get install python3-tk
-
+```
 
 ---
 
@@ -96,25 +101,40 @@ sudo apt-get install python3-tk
 
 ### 1. Clone the Repository
 
+```bash
 git clone https://github.com/Achuzzxd/Cyber_Security_and_Ethical_Hacking.git
+```
+```bash
 cd Cyber_Security_and_Ethical_Hacking/Port\ Scanner
-
+```
 
 ### 2. (Optional) Create Virtual Environment
 
+```bash
 python -m venv venv
-source venv/bin/activate # On Windows: venv\Scripts\activate
+```
 
+```bash
+source venv/bin/activate  
+```
+
+# On Windows:
+
+```bash
+venv\Scripts\activate
+```
 
 ### 3. Install Requirements
 
+```bash
 pip install -r requirements.txt
-
+```
 
 ### 4. Run the Application
 
+```bash
 python gui.py
-
+```
 
 ---
 

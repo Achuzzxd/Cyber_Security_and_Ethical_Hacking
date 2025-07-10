@@ -38,19 +38,21 @@ The application helps users identify potentially malicious URLs instantly and de
 
 **Status:** Completed (June 2025)
 
+* **Organization:** Tamizhan Skills
+
 ---
 
 ## Screenshot
 
-Phishing URL checker Screenshot
+### Phishing URL checker Screenshot:
 
 ![Phishing URL checker Screenshot](images/Screenshot_1.png)
 
-Legitimate Screenshot
+### Legitimate Screenshot:
 
 ![Legitimate Screenshot](images/Screenshot_2.png)
 
-Phishing Screenshot
+### Phishing Screenshot:
 
 ![Phishing Screenshot](images/Screenshot_3.png)
   
@@ -118,16 +120,41 @@ pip install -r requirements.txt
 
 ## Installation & Usage
 
-Clone the repository and run the application as follows:
+### 1. Clone the Repository
 
+```bash
 git clone https://github.com/Achuzzxd/Cyber_Security_and_Ethical_Hacking.git
-
+```
+```bash
 cd Cyber_Security_and_Ethical_Hacking/Phishing\ URL\ detector
+```
 
+### 2. (Optional) Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+```bash
+source venv/bin/activate  
+```
+
+# On Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Requirements
+
+```bash
 pip install -r requirements.txt
+```
+### 4. Run the Application
 
+```bash
 python src/gui.py
-
+```
 
 
 ### Usage

@@ -32,27 +32,28 @@ This project is a secure chat system that allows two users to communicate privat
 
 - **Status:** Completed (July 2025)
 
+* **Organization:** Tamizhan Skills
 ---
 
 ## Screenshot
 
-Secure Chat GUI Screenshot
+### Secure Chat GUI Screenshot:
 
 ![Secure Chat GUI Screenshot](images/Screenshot_1.png)
 
-Server Active Screenshot
+### Server Active Screenshot:
 
 ![Server Active Screenshot](images/Screenshot_2.png)
 
-Client1 connect to server Screenshot
+### Client1 connect to server Screenshot:
 
 ![Client1 connect to server Screenshot](images/Screenshot_3.png)
 
-Client2 connect to server Screenshot
+### Client2 connect to server Screenshot:
 
 ![Client2 connect to server Screenshot](images/Screenshot_4.png)
 
-End to End Encrypted Chat
+### End to End Encrypted Chat:
 
 ![End to End Encrypted Chat](images/Screenshot_5.png)
 
@@ -109,13 +110,42 @@ pip install -r requirements.txt
 
 ## Installation & Usage
 
-Clone the repository and run the application as follows:
+### 1. Clone the Repository
 
+```bash
 git clone https://github.com/Achuzzxd/Cyber_Security_and_Ethical_Hacking.git
+```
+```bash
 cd Cyber_Security_and_Ethical_Hacking/Secure\ Chat\ App
-pip install -r requirements.txt
-python gui.py
+```
 
+### 2. (Optional) Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+```bash
+source venv/bin/activate  
+```
+
+# On Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Application
+
+```bash
+python gui.py
+```
 
 **Usage:**
 1. Click "Activate Server" to start the chat server.
