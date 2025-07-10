@@ -138,7 +138,7 @@ It is designed solely for educational purposes to demonstrate the working of ran
     +-----------------+
 ```
 
-    **Flow:**  
+**Flow:**  
 
 - User initiates the simulation via the Streamlit GUI by selecting a target folder for encryption.
 - The simulator encrypts all files in the selected folder in the background using AES, moving encrypted files to a designated destination.
